@@ -1,8 +1,8 @@
 <!--
  * @Author: your name
  * @Date: 2021-09-28 16:40:38
- * @LastEditTime: 2021-10-12 11:31:35
- * @LastEditors: your name
+ * @LastEditTime: 2021-10-13 16:48:46
+ * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \chinese-poetry-namer\src\views\home\index.vue
 -->
@@ -95,7 +95,7 @@ export default {
     top: 50%;
     left: 50%;
     width: 300px;
-    margin-left: -160px;
+    margin-left: -150px;
     margin-top: -250px;
     background-color: #fff;
     border-radius: 5px;
