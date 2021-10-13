@@ -1,16 +1,102 @@
+<!--
+ * @Author: your name
+ * @Date: 2021-09-28 16:40:38
+ * @LastEditTime: 2021-10-13 14:37:49
+ * @LastEditors: your name
+ * @Description: In User Settings Edit
+ * @FilePath: \chinese-poetry-namer\README.md
+-->
 # chinese-poetry-namer
 Naming tools for Chinese Poetry
 古诗词取名工具
 
-灵感来自于chinese-poetry 和gushi_namer，感谢以上仓库作者
+灵感来自于
+[chinese-poetry]](https://github.com/chinese-poetry/chinese-poetry)
 
-本项目基于 vue-cli4.0 + webpack 4 + vant ui 开发
+[gushi_namer]](https://github.com/holynova/gushi_namer)
 
-v1.0.0版本已上线，在整理开源中
+[PiPiName]](https://github.com/wz930206/PiPiName)
 
+项目前端基于[vue-h5-template]](https://github.com/sunniejs/vue-h5-template)
 
-## 交流
+## 项目启动
 
-| 微信  |
-| ------------- |
-|<img src="https://ur-home.oss-cn-shanghai.aliyuncs.com/weixin/wx_code.jpg" width="300px"><div align="center"> 添加的时候备注上 `urhome`  </div>|
+### 前端
+
+```bash
+git clone https://github.com/wz930206/chinese-poetry-namer.git
+
+cd chinese-poetry-namer
+
+yarn
+
+yarn serve
+```
+### 后端
+
+```bash
+git clone https://github.com/wz930206/PiPiName.git
+
+cd PiPiName
+
+pip install opencc-python-reimplemented
+
+pip install flask
+```
+## 项目上线
+
+### 前端
+
+```bash
+yarn build
+```
+
+### 后端
+
+```bash
+把PiPiName项目下文件复制到服务器上
+
+pip install opencc-python-reimplemented
+
+pip install flask
+
+python3 main.py 
+```
+
+### nginx
+
+```bash
+server {
+  listen 9020;
+  server_name 127.0.0.1;
+  access_log off;
+  index index.html index.htm index.php;
+  root /var/www/html/name;
+  location /rest/ {
+        proxy_pass      http://127.0.0.1:9021/rest/;
+        proxy_set_header        Host $host;
+        proxy_set_header        X-Real-IP  $remote_addr;
+        proxy_set_header        X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header        X-Forwarded-Proto  $scheme;
+        proxy_connect_timeout   60;
+        proxy_read_timeout 600;
+        proxy_send_timeout      600;
+  }
+}
+```
+
+# 关于我
+
+体验更多工具，关注公众号”Ur Home“。
+
+回复加群，即可加入”Ur Home交流群“
+
+ <p>
+  <img src="./static/gzh_code.jpg" width="256" style="display:inline;">
+</p>
+
+扫描添加下方的微信并备注 UrHome，交流学习，及时获取最新动态。
+
+<p>
+  <img src="./static/wx_code.jpg" width="256" style="display:inline;">
+</p>

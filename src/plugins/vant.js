@@ -1,0 +1,20 @@
+// 按需全局引入 vant组件
+import Vue from 'vue'
+import { Button, Grid, Stepper, cell, CellGroup, GridItem, Tabbar, TabbarItem, Field, RadioGroup, Radio, Tab, Tabs, Switch, Picker, Popup, Overlay, NoticeBar } from 'vant'
+Vue.use(Button)
+Vue.use(Grid)
+Vue.use(GridItem)
+Vue.use(Field)
+Vue.use(RadioGroup)
+Vue.use(Radio)
+Vue.use(Stepper)
+Vue.use(Tab)
+Vue.use(Tabs)
+Vue.use(Switch)
+Vue.use(cell)
+Vue.use(CellGroup)
+Vue.use(Picker)
+Vue.use(Popup)
+Vue.use(Overlay)
+Vue.use(NoticeBar)
+Vue.use(Tabbar).use(TabbarItem)
