@@ -1,16 +1,17 @@
 <!--
  * @Author: your name
  * @Date: 2021-09-28 16:40:38
- * @LastEditTime: 2021-10-13 14:37:49
- * @LastEditors: your name
+ * @LastEditTime: 2021-10-13 16:41:25
+ * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \chinese-poetry-namer\README.md
 -->
 # chinese-poetry-namer
-Naming tools for Chinese Poetry
-古诗词取名工具
 
-灵感来自于
+## Naming tools for Chinese Poetry 古诗词取名工具
+
+## 灵感来自于
+
 [chinese-poetry]](https://github.com/chinese-poetry/chinese-poetry)
 
 [gushi_namer]](https://github.com/holynova/gushi_namer)
