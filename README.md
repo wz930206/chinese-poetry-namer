@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-09-28 16:40:38
- * @LastEditTime: 2021-10-13 16:41:25
+ * @LastEditTime: 2021-10-18 10:05:21
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \chinese-poetry-namer\README.md
@@ -61,7 +61,7 @@ pip install opencc-python-reimplemented
 
 pip install flask
 
-python3 main.py 
+. run.sh 
 ```
 
 ### nginx
